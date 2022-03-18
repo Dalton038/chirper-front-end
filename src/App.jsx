@@ -13,7 +13,7 @@ class App extends React.Component {
 
     handleUsernameChange = e => this.setState({ username: e.target.value });
     handleMessageChange = e => this.setState({ message: e.target.value });
-    handleChripSubmit = e => {
+    handleChirpSubmit = e => {
         e.preventDefault();
         let chirps = this.state.chirps.slice();
         chirps.push({
@@ -38,7 +38,7 @@ class App extends React.Component {
                             <input value={this.state.username} onChange={this.handleUsernameChange} type="text" className="form-control" />
                             <label ><SiGooglemessages /> Message</label>
                             <textarea value={this.state.message} onChange={this.handleMessageChange} className="form-control" rows={5} />
-                            <button onClick={this.handleChripSubmit} className="btn btn-primary btn-block mt-3"><FaFeather /> Chirp</button>
+                            <button onClick={this.handleChirpSubmit} className="btn btn-primary btn-block mt-3"><FaFeather /> Chirp</button>
                         </form>
                     </div>
                     <div className="col-md-7">
